@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:project_code",
+ "creation": "2026-09-22 13:09:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "project_code",
+  "organization",
+  "team",
+  "repository",
+  "status",
+  "start_date",
+  "end_date",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "project_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Organization",
+   "options": "Organization",
+   "reqd": 1
+  },
+  {
+   "fieldname": "team",
+   "fieldtype": "Link",
+   "label": "Team",
+   "options": "Team"
+  },
+  {
+   "fieldname": "repository",
+   "fieldtype": "Link",
+   "label": "Repository",
+   "options": "Repository"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "default": "Planned",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Planned\nActive\nOn Hold\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-22 13:09:00.000000",
+ "modified_by": "Administrator",
+ "module": "CodeOrbit",
+ "name": "Project",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

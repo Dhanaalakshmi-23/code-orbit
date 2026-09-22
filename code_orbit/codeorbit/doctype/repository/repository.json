@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:repository_name",
+ "creation": "2026-09-22 12:47:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "repository_name",
+  "github_repository_id",
+  "repository_url",
+  "owner",
+  "organization",
+  "project",
+  "default_branch",
+  "visibility",
+  "status",
+  "last_synced_at",
+  "sync_status",
+  "sync_error"
+ ],
+ "fields": [
+  {
+   "fieldname": "repository_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Repository Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "github_repository_id",
+   "fieldtype": "Data",
+   "label": "GitHub Repository ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "repository_url",
+   "fieldtype": "Data",
+   "label": "Repository URL"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "label": "Organization",
+   "options": "Organization"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "default_branch",
+   "fieldtype": "Data",
+   "default": "main",
+   "label": "Default Branch"
+  },
+  {
+   "fieldname": "visibility",
+   "fieldtype": "Select",
+   "label": "Visibility",
+   "options": "Public\nPrivate\nInternal"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "default": "Active",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "last_synced_at",
+   "fieldtype": "Datetime",
+   "label": "Last Synced At"
+  },
+  {
+   "fieldname": "sync_status",
+   "fieldtype": "Select",
+   "label": "Sync Status",
+   "options": "Pending\nSynced\nFailed"
+  },
+  {
+   "fieldname": "sync_error",
+   "fieldtype": "Small Text",
+   "label": "Sync Error"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-22 12:47:00.000000",
+ "modified_by": "Administrator",
+ "module": "CodeOrbit",
+ "name": "Repository",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "creation": "2026-09-22 13:09:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task",
+  "planned_points",
+  "status",
+  "completed_points"
+ ],
+ "fields": [
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Task",
+   "options": "Task",
+   "reqd": 1
+  },
+  {
+   "fieldname": "planned_points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Planned Points"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Planned\nIn Progress\nCompleted\nBlocked"
+  },
+  {
+   "fieldname": "completed_points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Completed Points"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-22 13:09:00.000000",
+ "modified_by": "Administrator",
+ "module": "CodeOrbit",
+ "name": "Sprint Tasks",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
